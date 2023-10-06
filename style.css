@@ -1,45 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
 body {background-color: black;
     color: white;
     font-size: 16px;
+    font-family: "italic";
    
 }
 
 
-header{
-  background-color: #333;
-}
-ul {
-   
-    list-style-type: none;
-    margin: 10;
-    padding: 10;
-    overflow: hidden;
-   
-  }
-  
-  li {
-   
-    float: right;
-    margin-top: 15px;
-    margin-bottom: auto;
-    
-  }
-  
-  li a {
-    display: inline;
-    color: white;
-    text-align: center;
-    padding: 14px 80px;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
 
-  ul img{
-    mix-blend-mode: multiply;
-    
+a, a:hover{
+  text-decoration:none
+}
+
+.top-bar{
+  display: inline;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+ 
+}
+
+.top-bar ul{
+  list-style: none;
+  display: flex;
+ 
+}
+
+.top-bar li {
+  margin: 0px 5px;
+  
+}
+
+.top-bar a:hover{
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+.logo img{
+  margin-left: 3rem;
+  width: 40px;
+  height: 40px;
+}
+
+nav{
+  background: #333;
+  display: flex;
+  padding: 5px 20px;
+  
+  align-items: center;
+  
+  
+}
+
+.logo{
+  flex: 1;
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu li{
+  padding:  15px 10px;
+  font-size: 16px;
+}
+
+main{
+  background: black;
+  
+  margin-left: 20rem;
+  margin-right: 20rem;
+ 
+}
+
+
+h1{
+  
+
+  
+  text-decoration: underline;
+  margin-left: 30rem;
+  margin-top: 5rem;
+  text-align: left
+  
+  
+  
+}
+
+.about-me{
+  padding: 30px;
+  margin-right: 27rem;
+  margin-left: 27rem;
+  font-size: 20px;
+  text-align: left;
 }
