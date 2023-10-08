@@ -4,14 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: black;
   
 }
 body {
     color: white;
     font-size: 16px;
     font-family: "italic";
-    background-color: black;
+    background-color: #E6E6E6;
     
    
 }
@@ -38,7 +38,8 @@ a, a:hover{
 }
 
 .top-bar li {
-  margin: 0px 5px;
+  margin: 0px 50px;
+  font-size: 20px;
   
 }
 
@@ -73,6 +74,7 @@ nav{
   display: flex;
   align-items: center;
   font-size: 20px;
+ 
 }
 
 .menu{
@@ -114,11 +116,62 @@ aside{
   float: right;
   display: inline;
   margin-top: -20rem;
-  box-shadow: 3px 3px lightgreen;
-  
-  
-  
-  
  
+
+}
+
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+}
+}
+
+.menu a{
+  color: white;
+}
+
+.my-pic img{
+  border-radius: 100%;
+  background:transparent;
   
+
+}
+
+.project-x{
+  margin-top: 30%;
+}
+
+#work {
+  text-align: center;
+  font-size: 40px;
+}
+
+#project-1{
+  padding: 100px 100px ;
+  display: inline-block;
+  box-shadow: 5px 5px 5px 5px black;
+  margin: 50px;
+}
+
+#project-2{
+  padding: 100px 100px ;
+  display: inline-block;
+  box-shadow: 5px 5px 5px 5px black;
+  margin: 50px;
+  float: right;
+}
+
+#project-3{
+  padding: 100px 100px ;
+  display: inline-block;
+  box-shadow: 5px 5px 5px 5px black;
+  margin: 50px;
+}
+
+#project-4{
+  padding: 100px 100px ;
+  display: inline-block;
+  box-shadow: 5px 5px 5px 5px black;
+  margin: 50px;
+  float: right;
 }
