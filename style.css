@@ -3,48 +3,44 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
   color: black;
   
 }
 body {
-    color: white;
+    
     font-size: 16px;
     font-family: "italic";
     background-color: #E6E6E6;
+    margin: auto;
     
    
 }
-
-
-
-a, a:hover{
-  text-decoration:none
-}
-
 .top-bar{
-  display: inline;
-
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 25px;
  
+  padding: 10px 20px;
+  display:inline;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  margin: auto;
+  
 }
-
 .top-bar ul{
   list-style: none;
   display: flex;
- 
+  
 }
 
 .top-bar li {
   margin: 0px 50px;
   font-size: 20px;
   
+  
+  
 }
 
 .top-bar a:hover{
-  color: white;
+  
   background-color: black;
   padding: 5px;
 }
@@ -63,19 +59,106 @@ nav{
   align-items: center;
   
   
+  
 }
+
+.my-pic{
+  float: right;
+  display: inline;
+  margin-top: -5rem;
+  margin-right: 20rem;
+  
+
+}
+
+a, a:hover{
+  text-decoration:none
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  
+ 
+}
+
+
+.about-me{
+  display:inline;
+  padding: 10px;
+  margin-right: 50rem;
+
+  margin-left: 19rem;
+  
+  font-size: 20px;
+  
+ 
+}
+
+/*I'm HERE Oct 16*/
+
+
+@media only screen and (max-width: 768px) {
+  .top-bar li{
+    font-size: 15px;
+    margin: 0px 40px;
+    margin-top: 10px;
+    justify-content: space-evenly;
+  } 
+
+  nav{
+    width: 100%;
+    background: #333;
+    
+    margin: 0px 0px;  
+    min-width: 700px;
+    
+  }
+  
+  .logo img{
+   margin-left: 1px;
+    width: 40;
+    height: 35px;
+    
+  }
+  
+  .my-pic{
+   
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 20px;
+    }
+  
+}
+
+
+
+
+
+/*
+
+
+
+
+
 
 .logo{
   flex: 1;
   
 }
 
-.logo a{
-  display: flex;
-  align-items: center;
-  font-size: 20px;
- 
-}
+
+
+
+
+
+
+
+
 
 .menu{
   display: flex;
@@ -93,39 +176,13 @@ h1{
   margin-bottom: 1rem;
 }
 
-.about-me{
-  display:flex;
-  padding: 10px;
-  margin-right: 50rem;
 
-  margin-left: 19rem;
-  
-  font-size: 20px;
-  
- 
-}
 
-main{
-  
-  margin-top: 5rem;
 
- 
-}
 
-aside{
-  float: right;
-  display: inline;
-  margin-top: -15rem;
-  margin-right: 20rem;
- 
 
-}
 
-@media screen and (max-width: 800px) {
-  .left, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-}
-}
+
 
 .menu a{
   color: white;
@@ -134,6 +191,8 @@ aside{
 .my-pic img{
   border-radius: 100%;
   background:transparent;
+  height: auto;
+  width: auto;
   
 
 }
@@ -295,3 +354,147 @@ footer p{
   text-align: center;
   opacity: 50%;
 }
+
+@media only screen and (max-width: 768px) {
+
+  * {
+    width: 100%;
+    
+    color: black;
+    font-size: 16px;
+    
+  }
+
+  /* For mobile phones: 
+  #col-1{
+    width: 100%;
+    text-decoration: underline;
+
+    
+  }
+  .my-pic img{
+display: none;
+  
+  }
+
+  .top-bar{
+    width: 100%;
+    
+    display: inline
+  }
+}
+
+.project-x{
+  margin-top: -50%;
+  background-color: #333333;
+  display: inline-block;
+  width: 100%;
+}
+
+#project-1 {
+  padding: 100px 100px;
+  display: inline;
+  box-shadow: 5px 5px 5px 5px black;
+  margin: 50px;
+ width: 100%;
+  background-color: white;
+
+}
+
+/*
+.box{
+  display: flex;
+}
+
+@media (max-width: 1360px)  {  // LAPTOP
+
+}
+
+@media (max-width: 980px)  { // TABLET
+
+}
+
+@media (max-width: 420px)  { // MOBILE
+
+}
+
+/*
+@media all and (max-width:700px){
+
+
+ .about-me{
+  display:flex;
+  padding: 10x;
+  margin-right: 5rem;
+
+  margin-left: 1rem;
+  width: 80%;
+  font-size: 15px;
+  
+
+ }
+
+
+
+ nav{
+  background: #333;
+  display: flex;
+  justify-content: space-between;
+
+  
+  margin-top: 5px;
+  width: 100%;
+  flex-shrink: 2;
+
+  
+  
+  
+}
+h1{
+  text-decoration: underline;
+  
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.my-pic{
+  
+display: none;
+
+
+  
+ 
+
+}
+
+.top-bar{
+  width: 100%;
+  padding: 380px;
+  display: 
+}
+
+
+}
+
+
+@media  all and (max-width:1000px){
+  .about-me{
+ display: inline-block;
+ text-align: center;
+ width: 80%;
+ font-size: 30px;
+
+   
+  }
+
+  .my-pic img{
+    border-radius: 100%;
+    background:transparent;
+    height: auto;
+    width: auto;
+    max-height: 500px;
+        
+  
+  }
+}
+  
