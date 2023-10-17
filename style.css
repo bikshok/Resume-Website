@@ -7,30 +7,54 @@
   color: black;
   
 }
-body {
-    
+
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
     font-size: 16px;
     font-family: "italic";
     background-color: #E6E6E6;
-    margin: auto;
     
-   
+}
+
+.name{
+  white-space:nowrap;
 }
 .top-bar{
  
   padding: 10px 20px;
   display:inline;
-  flex-wrap:wrap;
-  justify-content:space-around;
-  margin: auto;
+  
+  
+  
  
   
 }
 
+.logo{
+  flex: 1;
+  
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+ 
+}
+
 
 .top-bar li {
-  margin: 0px 50px;
+ display: flex;
+  margin: 0px 45px;
   font-size: 20px;
+  align-items: center;
+  justify-content: flex-end;
   
   
   
@@ -46,26 +70,32 @@ body {
   margin-left: 3rem;
   width: 40px;
   height: 40px;
+
 }
 
 nav{
   background: #333;
   display: flex;
+  
   padding: 5px 20px;
   
-  align-items: center;
+  
 
   margin-bottom: 30px;
   
   
   
+  
 }
+
 
 .my-pic{
   float: right;
   display: inline;
   margin-top: -5rem;
   margin-right: 20rem;
+
+  
   
 
 }
@@ -74,13 +104,6 @@ a, a:hover{
   text-decoration:none
 }
 
-.logo a{
-  display: flex;
-  align-items: center;
-  font-size: 10px;
-  
- 
-}
 
 
 .about-me{
@@ -89,6 +112,7 @@ a, a:hover{
   margin-right: 50rem;
   margin-left: 19rem;
   font-size: 20px;
+  white-space-collapse:collapse;
  
 }
 
@@ -117,15 +141,18 @@ h1{
 /*I'm HERE -------------------------------------------------------------------------------------------------------------------------Oct 17*/
 
 .menu ul{
-  display: flex;
-  
-  
+  display: inline-flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin-left: 0;
+  width: 100%;
   list-style: none;
   
 }
 .project-x{
   margin-top: 2%;
   background-color: #333333;
+ 
   
   
 }
@@ -304,20 +331,33 @@ footer p{
   opacity: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+#flex-end{
+  display: flex;
+  justify-content: flex-end;
+ }
+
+@media only screen and (max-width: 1200px) {
+  body{
+    margin: auto;
+  }
+
+
   .top-bar li{
+    display:flex;
     font-size: 15px;
-    margin: 0px 40px;
+    margin: 0px 20px;
     margin-top: 10px;
-    justify-content: space-evenly;
+    justify-content:flex-start
+    
   } 
 
   nav{
     width: 100%;
     background: #333;
-    
+   
     margin: 0px 0px;  
-    min-width: 700px;
+    min-width: 500px;
+    
     
   }
   
@@ -332,10 +372,10 @@ footer p{
    
     float: none;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+   
     margin-top: 20px;
+    margin: auto;
+    width: 50%;
     }
   
     .about-me{
@@ -363,12 +403,59 @@ footer p{
     
     .menu{
       display: flex;
-      display:inline-block;
+      justify-content: flex-end;
       padding: 0;
       margin-left: 0;
       width: 100%;
       
     }
+    #project-1{
+      padding: 50px 50px ;
+      display: flex;
+      justify-content: center;
+      box-shadow: 5px 5px 5px 5px black;
+      margin: 50px;
+      background-color: white;
+      
+    }
+    
+    
+    
+    #project-2{
+      padding: 50px 50px ;
+      display: flex;
+      justify-content: center;
+      box-shadow: 5px 5px 5px 5px black;
+      margin: 50px;
+      background-color: white;
+      
+    }
+    
+    #project-3{
+      padding: 50px 50px ;
+      display: flex;
+      justify-content: center;
+      box-shadow: 5px 5px 5px 5px black;
+      margin: 50px;
+    background-color: white;
+    }
+    
+    #project-4{
+      padding: 50px 50px ;
+      display: flex;
+      justify-content: center;
+      
+      box-shadow: 5px 5px 5px 5px black;
+      margin: 50px;
+     
+
+     
+      background-color: white;
+
+     
+    }
+
+
     
 
 }
@@ -379,6 +466,15 @@ footer p{
 
 /*
 
+
+    .project-x{
+      margin-top: 2%;
+      background-color: #333333;
+      margin: auto;
+      width: 50%;
+      
+      
+    }
 .logo{
   flex: 1;
   
