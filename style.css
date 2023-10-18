@@ -60,7 +60,7 @@ html,body
   
 }
 
-.top-bar a:hover{
+.top-bar div a:hover{
   
   background-color: black;
   padding: 5px;
@@ -336,7 +336,11 @@ footer p{
   justify-content: flex-end;
  }
 
-@media only screen and (max-width: 1200px) {
+
+
+
+ 
+@media only screen and  (max-width: 1500px) {
   body{
     margin: auto;
   }
@@ -344,12 +348,20 @@ footer p{
 
   .top-bar li{
     display:flex;
-    font-size: 15px;
+    font-size: 20px;
     margin: 0px 20px;
     margin-top: 10px;
-    justify-content:flex-start
+    justify-content:flex-end;
+   
+   
+    
+    
     
   } 
+
+  header{
+    white-space:nowrap;
+  }
 
   nav{
     width: 100%;
@@ -365,7 +377,6 @@ footer p{
    margin-left: 1px;
     width: 40;
     height: 35px;
-    
   }
   
   .my-pic{
@@ -374,8 +385,10 @@ footer p{
     display: block;
    
     margin-top: 20px;
+   
     margin: auto;
     width: 50%;
+    align-items: center;
     }
   
     .about-me{
@@ -402,12 +415,14 @@ footer p{
     }
     
     .menu{
-      display: flex;
-      justify-content: flex-end;
-      padding: 0;
-      margin-left: 0;
-      width: 100%;
-      
+
+
+      display: inline;
+      width: 50%;
+      justify-content: space-evenly;
+      margin-right: 90px;
+
+    
     }
     #project-1{
       padding: 50px 50px ;
@@ -464,21 +479,6 @@ footer p{
 
 
 
-/*
-
-
-    .project-x{
-      margin-top: 2%;
-      background-color: #333333;
-      margin: auto;
-      width: 50%;
-      
-      
-    }
-.logo{
-  flex: 1;
-  
-}
 
 
 
@@ -490,55 +490,4 @@ footer p{
 
 
 
-
-@media only screen and (max-width: 768px) {
-
-  * {
-    width: 100%;
-    
-    color: black;
-    font-size: 16px;
-    
-  }
-
-  /* For mobile phones: 
-  #col-1{
-    width: 100%;
-    text-decoration: underline;
-
-    
-  }
-  .my-pic img{
-display: none;
-  
-  }
-
-  .top-bar{
-    width: 100%;
-    
-    display: inline
-  }
-}
-
-.project-x{
-  margin-top: -50%;
-  background-color: #333333;
-  display: inline-block;
-  width: 100%;
-}
-
-#project-1 {
-  padding: 100px 100px;
-  display: inline;
-  box-shadow: 5px 5px 5px 5px black;
-  margin: 50px;
- width: 100%;
-  background-color: white;
-
-}
-
-/*
-.box{
-  display: flex;
-}
 
