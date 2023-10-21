@@ -12,7 +12,14 @@
             background-repeat: no-repeat;
             background-size: 100%;
         }
-    </style>-->
+    </style>
+
+  <--!<a href="log" class="logo"><img src="rocket-outline.svg" alt="" height="35px"  style="background-color: white;border-radius: 7%;"></a> 
+
+<div class="logo"><button onclick="darkMode()"><ion-icon   name="rocket-outline"></ion-icon></button></div> OCT 18
+
+-->
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
@@ -23,14 +30,16 @@
   <div class="box">
      
     <header>
+
+        <!--<input type="checkbox" id="darkmode">
+        <label for="darkmode"></label>-->
+
         <div class="top-bar">
+
          <nav>
-            
-                <a href="log" class="logo"><img src="rocket-outline.svg" alt="" height="35px"  style="background-color: white;border-radius: 7%;"></a>
-            
-            
-    
+
            <div class="menu" id="flex-end" >
+            
              <ul>
                 <li><a href="#about-me"  style="color: white;">About Me</a></li>
                 <li><a href="#project-1" style="color: white;">Project</a></li>
@@ -38,13 +47,9 @@
                 <li><a href="#contact" style="color: white;">Contact</a></li>
                 
              </ul> 
+             <ion-icon name="moon" class="moon" id="moonLogo"></ion-icon>
             </div>
-    
-       
-    
-    
-    
-    
+
          </nav>
         </div>
         </header>
@@ -126,7 +131,14 @@
        <footer>
         <p>Living, learning, & leveling up one day at a time.</p>
        </footer>
+       <script>
+        var moonLogo = document.getElementById("moonLogo");
+        moonLogo.onclick =function () {
+            document.body.classList.toggle("dark-theme")
+
+        }
+    </script>
   </div>
-    
+
 </body>
 </html>

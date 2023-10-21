@@ -1,477 +1,421 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
-  
-  color: black;
-  
 }
 
-
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-    font-size: 16px;
-    font-family: "italic";
-    background-color: #E6E6E6;
-    
+main {
+  color: var(--secondary-color);
 }
 
-.name{
-  white-space:nowrap;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: opx;
+  padding: 0px;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: "italic";
+  background-color: var(--primary-color);
 }
-.top-bar{
- 
+
+.name {
+  white-space: nowrap;
+}
+.top-bar {
   padding: 10px 20px;
-  display:inline;
-  
-  
-  
- 
-  
+  display: inline;
 }
 
-.logo{
-  flex: 1;
-  
+button {
+  float: center;
+  font-size: 2rem;
+  border-radius: 20%;
 }
 
-.logo a{
+.logo a {
   display: flex;
   align-items: center;
   font-size: 20px;
- 
 }
 
-
 .top-bar li {
- display: flex;
+  display: flex;
   margin: 0px 45px;
   font-size: 20px;
   align-items: center;
-  justify-content: flex-end;
-  
-  
-  
 }
 
-.top-bar div a:hover{
-  
+.top-bar div a:hover {
   background-color: black;
   padding: 5px;
 }
 
-.logo img{
+.logo img {
   margin-left: 3rem;
   width: 40px;
   height: 40px;
-
+  background-color: transparent;
 }
 
-nav{
-  background: #333;
+nav {
+  background-color: #333;
   display: flex;
-  
-  padding: 5px 20px;
-  
-  
+
+  padding: 15px 20px;
 
   margin-bottom: 30px;
-  
-  
-  
-  
+  justify-content: flex-end;
+}
+nav ul {
+  display: flex;
+  flex: 1;
+  text-align: right;
+}
+/*                                                               ----------------------------------------- OCT 21ST */
+:root {
+  --primary-color: #e6e6e6;
+  --secondary-color: #333;
 }
 
-
-.my-pic{
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #fff;
+}
+.my-pic {
   float: right;
   display: inline;
   margin-top: -5rem;
   margin-right: 20rem;
-
-  
-  
-
 }
 
-a, a:hover{
-  text-decoration:none
+a,
+a:hover {
+  text-decoration: none;
 }
 
-
-
-.about-me{
-
+.about-me {
   padding: 10px 10px 10px;
   margin-right: 50rem;
   margin-left: 19rem;
   font-size: 20px;
-  white-space-collapse:collapse;
- 
+  white-space-collapse: collapse;
 }
 
-.name{ 
-   display:inline;
+.name {
+  display: inline;
   padding: 10px 10px 10px;
   margin-right: 50rem;
-  
 
-  margin-left:19rem;
+  margin-left: 19rem;
 }
 
-
-
-
-
-
-
-h1{
+h1 {
   text-decoration: underline;
-  
+
   margin-left: 20rem;
   margin-bottom: 1rem;
 }
 
 /*I'm HERE -------------------------------------------------------------------------------------------------------------------------Oct 17*/
 
-.menu ul{
-  display: inline-flex;
-  justify-content: flex-end;
-  padding: 0;
-  margin-left: 0;
-  width: 100%;
-  list-style: none;
-  
-}
-.project-x{
+.project-x {
   margin-top: 2%;
   background-color: #333333;
- 
-  
-  
 }
 
 #work {
   text-align: center;
   font-size: 40px;
   margin-top: 30%;
-
 }
 
-#project-1{
-  padding: 100px 100px ;
+#project-1 {
+  padding: 100px 100px;
   display: inline-block;
   box-shadow: 5px 5px 5px 5px black;
   margin: 50px;
   margin-left: 5%;
   background-color: white;
-  
 }
 
-
-
-#project-2{
-  padding: 100px 100px ;
+#project-2 {
+  padding: 100px 100px;
   display: inline-block;
   box-shadow: 5px 5px 5px 5px black;
   margin: 50px;
   background-color: white;
-  
 }
 
-#project-3{
-  padding: 100px 100px ;
+#project-3 {
+  padding: 100px 100px;
   display: inline-block;
   box-shadow: 5px 5px 5px 5px black;
   margin: 50px;
-background-color: white;
+  background-color: white;
 }
 
-#project-4{
-  padding: 100px 100px ;
+#project-4 {
+  padding: 100px 100px;
   display: inline-block;
   box-shadow: 5px 5px 5px 5px black;
   margin: 50px;
   margin-right: 5%;
   background-color: white;
- 
 }
 
-#project-1 a:hover{
-  color: white;
-  background-color: black;
- 
-
-} 
-
-#project-2 a:hover{
+#project-1 a:hover {
   color: white;
   background-color: black;
 }
 
-#project-3 a:hover{
-  color: white;
-  background-color: black;
-}
-#project-4 a:hover{
+#project-2 a:hover {
   color: white;
   background-color: black;
 }
 
+#project-3 a:hover {
+  color: white;
+  background-color: black;
+}
+#project-4 a:hover {
+  color: white;
+  background-color: black;
+}
 
-
-#skill-title{
+#skill-title {
   text-align: center;
   font-size: 40px;
   margin-top: 20px;
 }
 
-
-.css{
+.css {
   font-size: 3rem;
-  
-
 }
 
-.java{
+.java {
   font-size: 3rem;
-
 }
 
-.node{
+.node {
   font-size: 3rem;
-
 }
 
-.react{
+.react {
   font-size: 3rem;
-
 }
-.html{
+.html {
   font-size: 3rem;
-
 }
 
-.git{
+.git {
   font-size: 3rem;
-
 }
-.github{
+.github {
   font-size: 3rem;
-
 }
-.npm{
+.npm {
   font-size: 3rem;
-
 }
 
-#skill-logo{
+#skill-logo {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-
-  
 }
 
-
-#contact-head{
+#contact-head {
   text-align: center;
   font-size: 40px;
- margin-top: 5rem;
- margin-left: 40%;
- margin-right: 40%;
+  margin-top: 5rem;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
-#cont p{
+#cont p {
   text-align: center;
   font-size: 20px;
   margin-left: 40%;
   margin-right: 40%;
-
 }
 
-.email{
+.email {
   font-size: 4rem;
-
 }
 
-.phone{
+.phone {
   font-size: 4rem;
- 
 }
 
-#contact{
+#contact {
   display: inline;
   margin-left: 47%;
-  
-
-
 }
 
-.info-cont{
+.info-cont {
   box-decoration-break: clone;
 }
 
-footer{
+footer {
   background-color: #333;
-  margin-top: 5rem;
 
+  margin-top: 5rem;
 }
 
-footer p{
+footer p {
   font-size: 30px;
-  color: white;
+
   text-align: center;
   opacity: 50%;
+  color: white;
 }
 
-#flex-end{
+#flex-end {
   display: flex;
   justify-content: flex-end;
- }
+}
 
+.moon {
+  border-radius: 20%;
+  height: 30px;
+  width: 25px;
+  cursor: pointer;
+  color: white;
+}
 
-
-
- 
-@media only screen and  (max-width: 1500px) {
-  body{
+@media only screen and (max-width: 1500px) {
+  body {
     margin: auto;
   }
 
-
-  .top-bar li{
-    display:flex;
+  .top-bar li {
+    display: flex;
     font-size: 20px;
     margin: 0px 20px;
     margin-top: 10px;
-    justify-content:flex-end;
-   
-   
-    
-    
-    
-  } 
-
-  header{
-    white-space:nowrap;
+    justify-content: flex-end;
   }
 
-  nav{
+  header {
+    white-space: nowrap;
+  }
+
+  nav {
     width: 100%;
-    background: #333;
-   
-    margin: 0px 0px;  
+    background-color: var(--secondary-color);
+
+    margin: 0px 0px;
     min-width: 500px;
-    
-    
   }
-  
-  .logo img{
-   margin-left: 1px;
+
+  .logo img {
+    margin-left: 1px;
     width: 40;
     height: 35px;
   }
-  
-  .my-pic{
-   
+
+  .my-pic {
     float: none;
     display: block;
-   
+
     margin-top: 20px;
-   
+
     margin: auto;
     width: 50%;
     align-items: center;
-    }
-  
-    .about-me{
-      padding: 10px 10px 10px;
+  }
 
+  .about-me {
+    padding: 10px 10px 10px;
 
-      margin-right: 0;
-      margin-left: 0;
-      font-size: 20px;
-     
-    }
-    
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 20px;
+  }
 
-    
-    .name{ 
-       display:inline-block;
-      padding: 0;
-      margin-left: 10px;
-      width: 100%;
-      
-      
-    
-      
-    }
-    
-    .menu{
+  .name {
+    display: inline-block;
+    padding: 0;
+    margin-left: 10px;
+    width: 100%;
+  }
 
-
-      display: inline;
-      width: 50%;
-      justify-content: space-evenly;
-      margin-right: 90px;
-
-    
-    }
-    #project-1{
-      padding: 50px 50px ;
-      display: flex;
-      justify-content: center;
-      box-shadow: 5px 5px 5px 5px black;
-      margin: 50px;
-      background-color: white;
-      
-    }
-    
-    
-    
-    #project-2{
-      padding: 50px 50px ;
-      display: flex;
-      justify-content: center;
-      box-shadow: 5px 5px 5px 5px black;
-      margin: 50px;
-      background-color: white;
-      
-    }
-    
-    #project-3{
-      padding: 50px 50px ;
-      display: flex;
-      justify-content: center;
-      box-shadow: 5px 5px 5px 5px black;
-      margin: 50px;
+  .menu {
+    display: inline;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-right: 90px;
+  }
+  #project-1 {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px black;
+    margin: 50px;
     background-color: white;
-    }
-    
-    #project-4{
-      padding: 50px 50px ;
-      display: flex;
-      justify-content: center;
-      
-      box-shadow: 5px 5px 5px 5px black;
-      margin: 50px;
-     
+  }
 
-     
-      background-color: white;
+  #project-2 {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px black;
+    margin: 50px;
+    background-color: white;
+  }
 
-     
-    }
+  #project-3 {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px black;
+    margin: 50px;
+    background-color: white;
+  }
+
+  #project-4 {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 5px 5px 5px 5px black;
+    margin: 50px;
+
+    background-color: white;
+  }
+}
+
+/*
+label{
+  width: 500px;
+  height: 200px ;
+  position: relative;
+  display: block;
+  background: white;
+  border-radius: 200px;
+  border: #333;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4) inset 0px -5px 15px rgb(255,255,255,0.4) ;
+  cursor: pointer;
+}
+
+label :after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0,0.2);
 
 
-    
+
+
+
+
 
 }
 
@@ -484,10 +428,17 @@ footer p{
 
 
 
+OCT 21ST 
 
 
 
+.menu ul {
+  display: flex;
 
+  padding: 0;
+  margin-left: 0;
+  width: 100%;
+  list-style: none;
+}
 
-
-
+*/
