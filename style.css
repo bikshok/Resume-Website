@@ -61,18 +61,24 @@ button {
 }
 
 nav {
+  margin-top: 0.5rem;
   background-color: #333;
-  display: flex;
-
+  display: block;
   padding: 15px 20px;
 
   margin-bottom: 30px;
-  justify-content: flex-end;
+
+  text-align: right;
 }
 nav ul {
-  display: flex;
-  flex: 1;
-  text-align: right;
+  display: inline-flex;
+
+  list-style: none;
+  font-size: 20px;
+  column-gap: 20px;
+}
+nav .moon {
+  margin-left: 50px;
 }
 /*                                                               ----------------------------------------- OCT 21ST */
 :root {
@@ -249,9 +255,10 @@ h1 {
   font-size: 4rem;
 }
 
-#contact {
-  display: inline;
-  margin-left: 47%;
+.contact {
+  margin: auto;
+
+  text-align: center;
 }
 
 .info-cont {
@@ -285,28 +292,23 @@ footer p {
   color: white;
 }
 
-@media only screen and (max-width: 1500px) {
-  body {
-    margin: auto;
-  }
-
-  .top-bar li {
-    display: flex;
-    font-size: 20px;
-    margin: 0px 20px;
-    margin-top: 10px;
-    justify-content: flex-end;
-  }
-
-  header {
-    white-space: nowrap;
+@media (max-width: 1500px) {
+  .moon {
+    border-radius: 20%;
+    height: 30px;
+    width: 25px;
+    cursor: pointer;
+    color: white;
   }
 
   nav {
-    width: 100%;
-    background-color: var(--secondary-color);
+    width: auto;
+    background-color: #333;
+    display: flex;
 
-    margin: 0px 0px;
+    padding: 15px 20px;
+
+    margin-bottom: 30px;
   }
 
   .logo img {
@@ -341,12 +343,6 @@ footer p {
     width: 100%;
   }
 
-  .menu {
-    display: inline;
-    width: 50%;
-    justify-content: space-evenly;
-    margin-right: 90px;
-  }
   #project-1 {
     padding: 50px 50px;
     display: flex;
@@ -354,6 +350,7 @@ footer p {
     box-shadow: 5px 5px 5px 5px black;
     margin: 50px;
     background-color: white;
+    color: black;
   }
 
   #project-2 {
@@ -363,6 +360,7 @@ footer p {
     box-shadow: 5px 5px 5px 5px black;
     margin: 50px;
     background-color: white;
+    color: black;
   }
 
   #project-3 {
@@ -372,6 +370,7 @@ footer p {
     box-shadow: 5px 5px 5px 5px black;
     margin: 50px;
     background-color: white;
+    color: black;
   }
 
   #project-4 {
@@ -382,7 +381,29 @@ footer p {
     box-shadow: 5px 5px 5px 5px black;
     margin: 50px;
 
+    color: black;
     background-color: white;
+  }
+
+  #cont p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  #cont h2 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .contact a {
+    margin: auto;
+
+    text-align: center;
   }
 }
 
@@ -440,4 +461,53 @@ OCT 21ST
   list-style: none;
 }
 
+
+/*
+.container{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+
+
+}
+@media (max-width:1536px) {
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (max-width:1280px){
+  .container{
+    max-width: 1024px;
+
+  }
+}
+
+@media (max-width:1024px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (max-width:768px){
+  .container{
+    max-width: 640px;
+    
+  }
+}
+
+@media (max-width:640px){
+  .container{
+    max-width: 475px;
+    
+  }
+}
+
+@media (max-width:475px){
+  .container{
+    max-width: 100%;
+  }
+}
 */
